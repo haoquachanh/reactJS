@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.scss';
+import FormComponent from './ex/FormComponent';
+// import MyComponent from './ex/MyComponent';
+
 
 function App() {
   return (
@@ -7,17 +10,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          oke con dê
+          React JS
           {/* Edit <code>src/App.js</code> and save to reload. */}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <FormComponent/>
+        
       </header>
     </div>
   );
