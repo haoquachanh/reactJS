@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
-import FormComponent from './ex/FormComponent';
+import ParentComponent from './ex/ParentComponent';
+// import FormComponent from './ex/FormComponent';
 // import MyComponent from './ex/MyComponent';
 
 
@@ -13,7 +14,7 @@ function App() {
           React JS
           {/* Edit <code>src/App.js</code> and save to reload. */}
         </p>
-        <FormComponent/>
+        <ParentComponent/>
         
       </header>
     </div>
