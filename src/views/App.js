@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
-import ParentComponent from './ex/ParentComponent';
+import ListTodo from './ToDos/ListTodo';
+// import ParentComponent from './ExampleComponents/ParentComponent';
 // import FormComponent from './ex/FormComponent';
 // import MyComponent from './ex/MyComponent';
 
@@ -11,11 +12,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          React JS
-          {/* Edit <code>src/App.js</code> and save to reload. */}
-        </p>
-        <ParentComponent/>
-        
+          Welcome to To Do List !!!
+        </p><br />
+        <ListTodo/>
       </header>
     </div>
   );
