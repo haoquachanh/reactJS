@@ -5,6 +5,9 @@ import ListTodo from './ToDos/ListTodo';
 // import FormComponent from './ex/FormComponent';
 // import MyComponent from './ex/MyComponent';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
@@ -16,6 +19,19 @@ function App() {
         </p><br />
         <ListTodo/>
       </header>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+
     </div>
   );
 }
