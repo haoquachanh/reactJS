@@ -8,9 +8,10 @@ class Nav extends React.Component{
         return(
             <>
                 <div className="topnav">
-                    <NavLink activeClassName="active" to="/" exact={true}>Home</NavLink>
-                    <NavLink activeClassName="active" to="/todo">Todo</NavLink>
-                    <NavLink activeClassName="active" to="/about">About</NavLink>
+                    <NavLink activeclassname="active" to="/" >Home</NavLink>
+                    <NavLink activeclassname="active" to="/todo">Todo</NavLink>
+                    <NavLink activeclassname="active" to="/about">About</NavLink>
+                    <NavLink activeclassname="active" to="/user">User</NavLink>
                 </div>
             </>
         )

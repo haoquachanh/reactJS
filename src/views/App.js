@@ -17,6 +17,7 @@ import{
   // Link
 } from "react-router-dom"
 import Home from './ExampleComponents/Home';
+import ListUser from './Users/ListUser';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" exact element={<Home/>}/>
             <Route path="todo" element={<ListTodo />} />
             <Route path="about" element={<MyComponent />} />
+            <Route path="user" element={<ListUser />} />
           {/* //</Route> */}
         </Routes>
 
