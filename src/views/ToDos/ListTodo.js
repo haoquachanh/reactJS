@@ -31,7 +31,7 @@ class ListTodo extends React.Component{
         let {listTodos , editTodo}=this.state
         let listTodosCopy=[...listTodos]
         let isEmptyObj=Object.keys(editTodo).length===0;
-        if (!isEmptyObj && todo.id==editTodo.id){
+        if (!isEmptyObj && todo.id===editTodo.id){
             let index=listTodosCopy.findIndex(item=>item.id===todo.id)
             listTodosCopy[index].titleName=editTodo.titleName
             console.log('>>> copy: ',listTodosCopy)
