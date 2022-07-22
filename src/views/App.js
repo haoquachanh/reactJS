@@ -12,12 +12,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import{
   BrowserRouter,
-  Routes,
   Route,
+  Switch,
   // Link
 } from "react-router-dom"
 import Home from './ExampleComponents/Home';
 import ListUser from './Users/ListUser';
+import DetailUser from './Users/DetailUser';
 
 
 function App() {
@@ -27,13 +28,19 @@ function App() {
         <header className="App-header">
           <Nav/>
           <img src={logo} className="App-logo" alt="logo" />
-          <Routes>
-            <Route path="/" exact element={<Home/>}/>
+          <Switch>
+            <Route path="/" exact><Home/></Route>
+            <Route path="/todo" exact><ListTodo /></Route>
+            <Route path="/about"><MyComponent /></Route>
+            <Route path="/user" exact><ListUser /></Route>
+            <Route path="/user/:id"><DetailUser /></Route>
+            {/* <Route path="/" exact element={<Home/>}/>
             <Route path="todo" element={<ListTodo />} />
             <Route path="about" element={<MyComponent />} />
             <Route path="user" element={<ListUser />} />
+            <Route path="user/:id" element={<DetailUser />} /> */}
           {/* //</Route> */}
-        </Routes>
+        </Switch>
 
         </header>
 
